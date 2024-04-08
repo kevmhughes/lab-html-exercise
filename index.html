@@ -4,33 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <img src="images/black-heart.png" alt="black heart" />
-      <span>NPM Clone Nifty Penguin Magic</span>
+    <header>
       <div>
-        <ul>
-          <li><a href="">npm Enterprise</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Solutions</a></li>
-          <li><a href="">Resources</a></li>
-          <li><a href="">Docs</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
+        <div>
+          <img
+            src="images/black-heart.png"
+            alt="black heart"
+            class="blackHeart"
+          />
+          <span>Nifty Penguin Magic</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">npm Enterprise</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Docs</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </nav>
       </div>
-      <img src="images/npm-logo.png" alt="" />
-      <div>
-        <img src="images/magnifying-glass.png" alt="magnifying glass" />
-        <form action="">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-        </form>
+<div>
+    <img src="images/npm-logo.png" alt="npm logo" class="npmLogo" />
+      <img src="images/magnifying-glass.png" alt="magnifying glass" class="magnifyingGlass"/>
+      <form action="/">
+        <input type="text" name="seacrch" placeholder="Search packages"/>
         <button>Search</button>
-        <div>Join Log</div>
+    </form>
+      <div>
+        <a href="">Join </a>
+        <a href="">Log</a>
       </div>
-    </nav>
+</div>
+
+    </header>
     <section>
       <h1>Build amazing things</h1>
       <article>
@@ -40,7 +51,7 @@
       <div>See plans Join for free</div>
     </section>
     <section>
-        <img src="images/triangle-hexagon.svg" alt="triangle hexagon">
+      <img src="images/triangle-hexagon.svg" alt="triangle hexagon" />
       <h1>Bring the best of open source to your company</h1>
       <article>
         npm is the tool used by over 11,000,000 JavaScript developers around the
@@ -51,7 +62,7 @@
     </section>
     <section>
       <div>
-        <img src="images/zero-configuration.svg" alt="zero configuration">
+        <img src="images/zero-configuration.svg" alt="zero configuration" />
         <h3>Zero configuration</h3>
         <p>
           Create an org, add your team, and start collaborating. Nothing to
@@ -60,7 +71,7 @@
       </div>
 
       <div>
-        <img src="images/team-management.svg" alt="team management">
+        <img src="images/team-management.svg" alt="team management" />
         <h3>Team management</h3>
         <p>
           Control who has access to what modules within your team namespace
@@ -69,7 +80,7 @@
       </div>
 
       <div>
-        <img src="images/familiar-features.svg" alt="">
+        <img src="images/familiar-features.svg" alt="" />
         <h3>Familiar features</h3>
         <p>
           npm Orgs has 100% parity with all the public npm registry features
@@ -77,7 +88,7 @@
         </p>
       </div>
       <div>
-        <img src="images/npm-audit.svg" alt="">
+        <img src="images/npm-audit.svg" alt="" />
         <h3>npm audit</h3>
         <p>
           Enjoy the security auditing features built into the npm client, a
