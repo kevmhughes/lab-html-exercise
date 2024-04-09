@@ -39,11 +39,10 @@ nav a {
 
 .magnifyingGlass {
   height: 1.5rem;
-  position: relative;
-  right: -35px;
 }
 
-input[type=text], select {
+input[type="text"],
+select {
   width: 90%;
   padding: 12px 0 12px 40px;
   margin: 8px 0;
@@ -53,13 +52,16 @@ input[type=text], select {
   font-size: 1rem;
 }
 
-form {
-  width: 90%;
-}
-
 button {
   color: white;
   background-color: #fb3e44;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  padding: 0 20px 0 20px;
 }
 
 .headerLinks {
@@ -72,12 +74,16 @@ button {
   text-decoration: none;
   border: 1px solid black;
   padding: 5px;
-  color: black
+  color: black;
+  width: 80px;
+  text-align: center;
 }
 
 .loginLink {
   text-decoration: none;
-  color: black
+  color: black;
+  width: 80px;
+  text-align: center;
 }
 
 #firstSection {
@@ -89,16 +95,19 @@ button {
   justify-content: center;
 }
 
-#firstSection > h1{
+#firstSection > h1 {
   font-size: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-#firstSection > article{
+#firstSection > article {
   width: 400px;
   text-align: center;
 }
 
-#firstSection > div{
+#firstSection > div {
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -110,7 +119,7 @@ button {
   text-decoration: none;
   color: black;
   font-weight: 1200;
-  font-size: larger
+  font-size: larger;
 }
 
 .seePlansLink {
@@ -118,9 +127,9 @@ button {
   color: white;
   font-weight: 1200;
   font-size: larger;
-  background-color: #FB3B49;
+  background-color: #fb3b49;
   padding: 10px 40px 10px 40px;
-  box-shadow: 8px 8px 0 rgba(251,59,73,.2)
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
 }
 
 #secondSection {
@@ -131,20 +140,23 @@ button {
 
 #secondSection > img {
   width: 200px;
-  padding: 50px 0 20px 0
+  padding: 50px 0 20px 0;
 }
 
 #secondSection > h1 {
-  background-color: rgba(255,204,53,.4);
+  background-color: rgba(255, 204, 53, 0.4);
   padding: 0 20px 0 20px;
   font-size: 2rem;
-  transform: skew(9deg,0deg);
-  font-style: italic
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 #secondSection > article {
-  width: 600px;
-  font-size: .75rem;
+  max-width: 600px;
+  font-size: 0.75rem;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -163,14 +175,16 @@ button {
 }
 
 #thirdSection h3 {
-  color: #FB3B49;
+  color: #fb3b49;
 }
 
 .thirdSectionContainer {
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 1000px;
+  gap: 10px;
+  width: 55%;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -183,11 +197,24 @@ button {
   width: 250px;
   margin: 0 auto;
   padding: 10px 50px;
-  box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
   margin-top: 50px;
   margin-bottom: 50px;
   text-decoration: none;
 }
 
+input[type="text"] {
+  background-image: url(images/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 1.5rem;
+  height: fit-content;
+}
 
-
+input[type="button"] {
+  background-color: #fb3e44;
+  color: white;
+  height: 42px;
+  width: 100px;
+  border: 0;
+}
